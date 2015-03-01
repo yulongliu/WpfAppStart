@@ -10,10 +10,8 @@
     <Grid>
         <StackPanel Orientation="Vertical">
             <TextBlock Text="这是First Page！"/>
-            <TextBlock Text="跳转">
-                <Hyperlink NavigateUri="SecondPage.xaml">
-                    前往Second Page
-                </Hyperlink>
+            <TextBlock>
+                <Hyperlink NavigateUri="SecondPage.xaml">前往Second Page</Hyperlink>
             </TextBlock>
             <Frame Source="SecondPage.xaml" NavigationUIVisibility="Visible"/>
         </StackPanel>

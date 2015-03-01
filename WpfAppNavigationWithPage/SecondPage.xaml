@@ -4,10 +4,27 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="300" d:DesignWidth="600"
 	Title="SecondPage">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         <TextBlock Text="这是内嵌于Frame中的Second Page！"/>
+        <TextBlock Grid.Column="1">跳转到<Hyperlink NavigateUri="SecondPage.xaml#first">锚first</Hyperlink></TextBlock>
+        <TextBlock Grid.Column="21">跳转到<Hyperlink NavigateUri="SecondPage.xaml#second">锚second</Hyperlink></TextBlock>
+        <TextBox Name="first" Grid.Row="1"/>
+        <TextBox Name="second" Grid.Row="3" Grid.Column="3"/>
     </Grid>
 </Page>
