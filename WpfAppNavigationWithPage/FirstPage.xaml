@@ -1,0 +1,21 @@
+﻿<Page x:Class="WpfAppNavigationWithPage.FirstPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="FirstPage">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="这是First Page！"/>
+            <TextBlock Text="跳转">
+                <Hyperlink NavigateUri="SecondPage.xaml">
+                    前往Second Page
+                </Hyperlink>
+            </TextBlock>
+            <Frame Source="SecondPage.xaml" NavigationUIVisibility="Visible"/>
+        </StackPanel>
+    </Grid>
+</Page>
