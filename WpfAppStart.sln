@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppStart", "WpfAppStart\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppNavigationWithPage", "WpfAppNavigationWithPage\WpfAppNavigationWithPage.csproj", "{94785015-6910-40A7-9260-D085D9B862C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleLoginWithWPF", "SimpleLoginWithWPF\SimpleLoginWithWPF.csproj", "{B6FDEB06-80DD-410C-9213-0B65387A0EF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{94785015-6910-40A7-9260-D085D9B862C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94785015-6910-40A7-9260-D085D9B862C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94785015-6910-40A7-9260-D085D9B862C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6FDEB06-80DD-410C-9213-0B65387A0EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FDEB06-80DD-410C-9213-0B65387A0EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FDEB06-80DD-410C-9213-0B65387A0EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FDEB06-80DD-410C-9213-0B65387A0EF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
