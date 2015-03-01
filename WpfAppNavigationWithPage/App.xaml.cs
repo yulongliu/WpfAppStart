@@ -20,5 +20,37 @@ namespace WpfAppNavigationWithPage
             navigatedWin.Content = new FirstPage();
             navigatedWin.Show();
         }
+
+        private void Application_NavigationFailed(object sender, NavigationFailedEventArgs e)
+        {
+            MessageBox.Show(e.Exception.Message);
+
+            e.Handled = true;
+        }
+
+        private void Application_Navigated(object sender, NavigationEventArgs e)
+        {
+            Console.WriteLine(e.Content.ToString());
+        }
+
+        private void Application_NavigationProgress(object sender, NavigationProgressEventArgs e)
+        {
+            Console.WriteLine(e.Uri.ToString());
+        }
+
+        private void Application_NavigationStopped(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+        private void Application_LoadCompleted(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+        private void Application_FragmentNavigation(object sender, FragmentNavigationEventArgs e)
+        {
+
+        }
     }
 }
